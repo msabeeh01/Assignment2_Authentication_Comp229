@@ -1,0 +1,55 @@
+/*Assignment 2, 
+Express Portfolio
+ Muhammad Sabeeh - 301184564 - 2022/06/16*/
+/* custom css here */
+body{
+    background-color: #222222;
+}
+
+p, h1, h2, h3, h4, h5, div *{
+    color:white;
+}
+
+
+.mission, .aboutme {
+    background-color: #222222;
+    border-radius: 10px;
+    padding:10px;
+}
+
+#serviceitem{
+    background-color: #222222;
+    padding:30px;
+    margin:0px;
+}
+
+div{
+    margin-top:10px;
+    margin-bottom:10px;
+}
+
+.centercontainer{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.col{
+    text-align: center;
+    padding:0;
+    margin:0;
+}
+
+#colvert {
+    justify-content: center;
+    align-items: center;
+}
+
+#greenback{
+    background-color: #222222;
+}
+
+.container{
+    background-color: #222222;
+}

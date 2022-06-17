@@ -1,0 +1,52 @@
+<%- include ../partials/header.ejs %>
+
+<%- include ../partials/main-nav.ejs %>
+<style>
+    html, body,  .container{
+        background-color: #222222;
+        color:white;
+    }
+
+</style>
+<div class="container" >
+    <div class="row">
+        <div class="offset-md-3 col-md-6" >
+        <h1><%= title%></h1>
+
+        <!--Call the POST route to add information from this form-->
+        <form class="form" method="POST">
+            <div class="form-group">
+                <label for="username">Username</label>
+                <input type="text" class="form-control"
+                id="usernameTextField"
+                placeholder="Enter username"
+                name="username" value = <%=business.name%>required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="text" class="form-control"
+                id="emailTextField"
+                placeholder="Enter email"
+                name="email" value = <%=business.email%> required>
+            </div>
+
+            <div class="form-group">
+                <label for="number">Password</label>
+                <input type="text" class="form-control"
+                id="numberTextField"
+                placeholder="Enter number"
+                name="number" value = <%=business.number%> required>
+            </div>
+
+            <button class="btn btn-primary" type="submit">Submit</button>
+            <a href="/business-contact-list" class="btn btn-warning">Cancel</a>
+            
+        </form>
+        </div>
+    </div>
+</div>
+
+<%- include ../partials/bottom-nav.ejs %>
+
+<%- include ../partials/footer.ejs %>
